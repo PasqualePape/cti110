@@ -24,4 +24,29 @@ def main():
 #call the mainfunction
 if __name__ == "__main__":
     main()
-    
+
+
+   
+
+def returnNum():
+    userInput = input("give me a big number: ")
+    while not userInput.isnumeric():
+        print("Value must be a number")
+        userInput = input("give me a big number: ")
+    return int(userInput)
+
+#call the value returning function
+bigNum = returnNum()
+print(bigNum * 5)
+
+
+
+
+def getName(lastName):
+    name = input("Enter your first name: ")
+    fullName = "*************" + name + "***************" + lastName
+    return fullName
+
+
+print(getName("last name"))
+
